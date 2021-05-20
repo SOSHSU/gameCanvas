@@ -23,7 +23,7 @@ function jump(){
 setInterval(function() {
     var playerTop = parseInt(window.getComputedStyle(player).getPropertyValue("top"));
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if(blockLeft<40 && blockLeft>0 && playerTop>=130){
+    if(blockLeft<40 && blockLeft>0 && playerTop>=180){
         block.style.animation = "none";
         alert("Score: "+Math.floor(counter/100));
         counter=0;

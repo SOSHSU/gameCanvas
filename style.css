@@ -5,34 +5,42 @@
 }
 .game{
     width: 500px;
-    height: 200px;
+    height: 250px;
     border: 1px solid black;
     margin: auto;
+    background-image: url('https://cms-assets.tutsplus.com/uploads/users/107/posts/25612/final_image/37-affinity-game-background-600.jpg');
+    animation: slide 3s linear infinite;
+}
+@keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -600px 0; }
 }
 #player{
     width: 20px;
     height: 50px;
     background-color: black;
+    border: 0.1px solid white;
     position:relative;
-    top: 150px;
+    top: 200px;
     left: 20px;
 }
 .animate{
     animation: jump 0.5s linear;
 }
 @keyframes jump{
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
+    0%{top: 200px;}
+    30%{top: 150px;}
+    70%{top: 150px;}
+    100%{top: 200px;}
 }
 
 #block{
-    background-color: gray;
+    background-color: white;
+    border: 0.1px solid black;
     width: 20px;
     height: 20px;
     position: relative;
-    top: 130px;
+    top: 180px;
     left: 500px;
     animation: block 2s infinite linear;
 }
